@@ -3,32 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lyn</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet" > -->
 </head>
 <body class="min-h-screen flex flex-col">
-    <div class="p-4 bg-gray-800 flex justify-between items-center" >
-        <h1  class="font-bold text-2xl">My Website</h1>
+    <div class="p-4 bg-gray-800 flex justify-between items-center top-0 sticky">
+        <h1 class="font-bold text-3xl text-green-400">Lyn</h1>
         <div  class="mt-2">
             <ul class="flex space-x-4" >
-                <li> <a href="#" class="text-gray-300 hover:text-white">Home</a></li>
-                <li> <a href="#" class="text-gray-300 hover:text-white">About</a></li>
-                <li> <a href="#" class="text-gray-300 hover:text-white">Services</a></li>
-                <li> <a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                <li> <a href="about.html" class="text-gray-300 hover:text-white hover:bg-gray-700 p-4 mt-2">About</a></li>
+                <li> <a href="#clothing" class="text-gray-300 hover:text-white hover:bg-gray-700 p-4 mt-2">Clothing</a></li>
+                <li> <a href="#accessories" class="text-gray-300 hover:text-white hover:bg-gray-700 p-4 mt-2">Accessories</a></li>
+                <li> <a href="#contact" class="text-gray-300 hover:text-white hover:bg-gray-700 p-4 mt-2" >Contact</a></li>
+                <span class="material-symbols-outlined text-gray-300 hover:text-white">
+                    <a href="login.html">Login</a>
+                </span>
             </ul>
         </div>
     </div>
-    <div class="p-4 flex-grow">
-        <div class="p-10 rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold mb-3">Welcome to my website</h2>
-            <p class="text-gray-800">
-                This is a simple website about my hobbies.
-            </p>
+    <div class="text-center w-full min-h-screen object-contain bg-cover flex justify-center items-center relative-container"  style="background-image: url('Hero\ image.jpg');">
+        <div class="pt-200 h-full absolute  text-center"> 
+            <h2 class="text-5xl font-bold mb-3 text-white p-200">Welcome to</h2><h2 class="text-3xl font-semibold mb-3 text-green-400">Lyn</h2>
+            <button class="text-gray-800 hover:bg-gray-500 p-4 font-semibold rounded-lg shadow-lg bg-gray-200" >
+                <a href="#">SHOP</a>
+            </button> 
         </div>
+    </div>
+    <div class="p-5 bg-green-300 text-center">
+        <p class="text-center text-semibold text-4xl"> 20% OFF SUMMER FITS </p>
+        <div class="flex justify-between">
+            <button class="text-white hover:bg-gray-500 p-4 font-semibold rounded-lg shadow-lg bg-gray-600">CLOTHING</button>
+            <button class="text-white hover:bg-gray-500 p-4 font-semibold rounded-lg shadow-lg bg-gray-600">ACCESSORIES</button>
+        </div>
+    </div>
+    <div class="text-xl font-semibold text-center">
+        <h2 id="clothing"> <a href="#">MEN</a></h2>
+        <h2 id="clothing"> <a href="#">WOMEN</a></h2>
+        <h2 id="accessories"> <a href="#">ACCESSORIES</a></h2>
+    </div>
+    <div class="p-5 bg-green-300  text-center " id="contact">
+        <div >
+            <i class="fab fa-facebook text-3xl" aria-hidden="true"></i>Lyn Clothing
+        </div> 
+       <div >
+            <i class="fab fa-twitter text-3xl" aria-hidden="true"></i>@lynclothing
+       </div>
+       <div >
+            <i class="fab fa-instagram text-3xl" aria-hidden="true"></i>@lyn-clothing
+       </div>
     </div>
     <footer class="bg-gray-800 text-white p-4 mb-0 text-center">
         <p>
-            &copy; 2024 My Website. All rights reserved.
+            &copy; 2024 Lyn. All rights reserved.
         </p>
     </footer>
 </body>
